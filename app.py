@@ -29,12 +29,6 @@ X = sample.drop(columns = ['Selling Price'])
 y = sample['Selling Price']
 
 def random_forest(X, y):
-    # sample = pd.read_csv('sample.csv', header = 0, encoding = 'unicode_escape')
-    # sample['general_cate'] = sample['general_cate'].str.lower()
-    # sample = sample.dropna(subset=['Selling Price', 'general_cate', \
-    #     'weights_ounces'])[['Selling Price', 'general_cate', 'words_len', 'weights_ounces']]
-    # X = sample.drop(columns = ['Selling Price'])
-    # y = sample['Selling Price']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
     preproc = ColumnTransformer(
         transformers = [
