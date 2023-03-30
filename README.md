@@ -1,2 +1,2 @@
 # Amazon_Model
- A prediction tool for items on Amazon
+ A very basic prediction tool for items on Amazon
